@@ -24,8 +24,8 @@ def initialize_parameters(n_features):
     """Return a dict with 'w' of shape (n_features,) and scalar 'b'."""
     
     return {
-        'w': np.random.normal(0.0, 0.0001, (n_features, )),
-        'b': np.random.normal(0.0, 0.0001, 1)[0],
+        'w': np.zeros(n_features),
+        'b': 0,
     }
 
 # Step 3 - compute_scores
