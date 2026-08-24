@@ -41,7 +41,7 @@ import numpy as np
 
 def predict_from_scores(scores):
     # TODO: convert a 1-D array of raw scores into +1 / -1 class predictions.
-    return (scores >= 0).astype(int) * 2 - 1
+    return np.sign(scores)
 
 # Step 5 - hinge_loss_example (not yet solved)
 # TODO: implement
