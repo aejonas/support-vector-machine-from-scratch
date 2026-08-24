@@ -17,8 +17,16 @@ def standardize_features(x):
 
     return (x - mean) / std
 
-# Step 2 - initialize_parameters (not yet solved)
-# TODO: implement
+# Step 2 - initialize_parameters
+import numpy as np
+
+def initialize_parameters(n_features):
+    """Return a dict with 'w' of shape (n_features,) and scalar 'b'."""
+    
+    return {
+        'w': np.random.normal(0.0, 0.1, (n_features, )),
+        'b': np.random.normal(0.0, 0.1, 1)[0],
+    }
 
 # Step 3 - compute_scores (not yet solved)
 # TODO: implement
